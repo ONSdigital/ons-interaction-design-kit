@@ -72,14 +72,20 @@
   --layout-container: 81.5rem;    /* 1304px */
   --layout-desktop-outside-margin: 3rem;  /* 48px */
   --layout-tablet-outside-margin: 2rem;  /* 32px */
-  --layout-mobile-outside-margin: 1.5rem;  /* 24px */
+  --layout-mobile-outside-margin: 1rem;  /* 16px */
   --layout-gutter: 2.5rem;          /* 40px */
   --layout-content-width: 53.5rem;     /* 856px */
   --layout-text-width: 39.5rem;        /* 632px */
 
   /* Breakpoints */
-  --breakpoint-mobile: 30rem;     /* 480px */
-  --breakpoint-tablet: 46.5rem;   /* 744px */
+  --breakpoint-mobile: 25rem;     /* 400px */
+  --breakpoint-tablet: 50rem;     /* 800px */
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --layout-gutter: 2rem; /* 32px */
+  }
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -120,12 +126,24 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+.page-content h2 {
+  margin-top: var(--spacing-2xl);
+}
+
+.page-content h2:first-child {
+  margin-top: 0;
+}
+
+.page-content h3 {
+  margin-top: var(--spacing-xl);
+}
+
 .page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
   margin-bottom: var(--spacing-xs);
 }
 
 .page-content p {
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
 html {
@@ -149,8 +167,20 @@ body {
 
 .container {
   max-width: var(--layout-container);
-  padding: 0px var(--layout-desktop-outside-margin);
+  padding: 0 var(--layout-desktop-outside-margin);
   margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding-inline: var(--layout-tablet-outside-margin);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding-inline: var(--layout-mobile-outside-margin);
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -132,7 +132,7 @@ const t = ui[lang as keyof typeof ui] || ui['en']; // Fallback to English if the
     gap: var(--spacing-xs);
   }
 
-  @media screen and (max-width: 46.5rem) {
+  @media screen and (max-width: 800px) {
     footer {
       padding: 0 var(--layout-tablet-outside-margin);
     }
@@ -147,7 +147,7 @@ const t = ui[lang as keyof typeof ui] || ui['en']; // Fallback to English if the
     }
   }
 
-  @media screen and (max-width: 30rem) {
+  @media screen and (max-width: 400px) {
     footer {
       padding: 0 var(--layout-mobile-outside-margin);
     }
