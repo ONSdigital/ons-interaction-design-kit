@@ -66,6 +66,7 @@
   --spacing-2xl: 4rem;            /* 64px */
   --spacing-3xl: 5rem;            /* 80px */
 
+  --spacing-content-section-gap: var(--spacing-2xl);
   --spacing-content-subsection-gap: var(--spacing-md);
 
   /* Layout units */
@@ -127,7 +128,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .page-content h2 {
-  margin-top: var(--spacing-2xl);
+  margin-top: var(--spacing-content-section-gap);
 }
 
 .page-content h2:first-child {
@@ -135,7 +136,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .page-content h3 {
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-content-section-gap);
 }
 
 .page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
