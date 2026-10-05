@@ -144,7 +144,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .page-content p {
+  max-width: var(--layout-text-width);
   margin-bottom: var(--spacing-sm);
+}
+
+.page-content ul {
+  max-width: var(--layout-text-width);
 }
 
 html {

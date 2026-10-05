@@ -1,35 +1,35 @@
 ---
-layout: "../../layouts/PageLayout.astro"
+layout: ../../layouts/PageLayout.astro
 title: Accessibility statement for ons.gov.uk
-description: How accessible the ONS website is and what we are doing to improve accessibility.
-metadata:
-    lastUpdated: "30 April 2026"
+description: Accessibility information and guidance.
+lastUpdated: "2026-09-14"
 ---
 
 ## Overview
 
 The Office for National Statistics (ONS) is committed to making its website accessible, in accordance with the [Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/952/contents).
 
-This accessibility statement applies to the [www.ons.gov.uk](http://www.ons.gov.uk) website, which is run by the ONS. It was last reviewed in December 2025. The next review will take place in October 2026.
+This accessibility statement applies to the [www.ons.gov.uk](www.ons.gov.uk) website, which is run by the ONS. It was last reviewed in December 2025. The next review will take place in October 2026.
 
 We are currently improving the ONS website and will be launching a new website platform in 2026.
 
-<p>
+<img
+  src="https://www.thetimes.com/imageserver/image//9941546d-ea73-4ddf-88fa-d5c7f224ecb1.jpg?crop=1000%2C667%2C0%2C0"
+  alt="ONS office Newport"
+/>
+
 We want everyone who visits our website to have a positive experience, and easily find and use the information they need. To help you, we have made our website simple to understand and more user-friendly, so you can:
-    <ul>
-        <li>change colours, contrast levels and fonts</li>
-        <li>zoom in up to 300% without the text spilling off the screen</li>
-        <li>navigate most of the website using just a keyboard</li>
-        <li>navigate most of the website using speech recognition software</li>
-        <li>listen to most of the website using a screen reader, including the most recent versions of JAWS, NVDA and VoiceOver</li>
-    </ul>
-</p>
+* change colours, contrast levels and fonts
+* zoom in up to 300% without the text spilling off the screen
+* navigate most of the website using just a keyboard
+* navigate most of the website using speech recognition software
+* listen to most of the website using a screen reader, including the most recent versions of JAWS, NVDA and VoiceOver
 
 If you have a disability, [AbilityNet](https://mcmw.abilitynet.org.uk/) has advice on making your device easier to use.
 
 If you experience any difficulty in accessing our website or if you need any information in a different format, please [contact us](https://www.ons.gov.uk/aboutus/contactus/generalandstatisticalenquiries).
 
-## How accessible the ONS website is
+## How accessible the website is
 
 We know some parts of the ONS website are not fully accessible:
 * some tables do not have row headers
@@ -73,3 +73,139 @@ While not a failure under WCAG 2.2 level AA guidelines, this can make it difficu
 
 #### Data visualisations
 
+We produce hundreds of data visualisations each year to aid with user understanding of our data and analysis. With the introduction of WCAG 2.2 guidelines and changes to success criterion 2.5.8 target size (minimum) within the AA level standard, some of our previously accessible data visualisations published since 23 September 2020 may not be fully accessible.
+
+We will complete an audit to identify if any further work is needed to bring our data visualisations in line with the guidelines, and will update this statement once this review is complete.
+
+Some of our data visualisations may not load or function correctly for users who have JavaScript disabled. This is because of the way in which we embed data visualisations onto the web page.
+
+This is particularly the case for our more advanced interactive tools such as [Explore local statistics](https://www.ons.gov.uk/explore-local-statistics/), [Build a custom area profile](https://www.ons.gov.uk/visualisations/customprofiles) and [Census maps](https://www.ons.gov.uk/census/maps/), which use dynamic user interactions as a core function of the product.
+
+In all instances, the underlying data are accessible through other formats, such as the accompanying dataset files and the surrounding commentary on the HTML web page.
+
+We will be introducing a new website platform and content management system in 2026 and are currently in the Discovery phase for data visualisations. We will be exploring other options for publishing in an accessible way as part of this work.
+
+We are also introducing more automated accessibility checks for our templates. We ensure that every member of the Data Visualisation team undergoes accessibility training to ensure accessibility is embedded into our design practices.
+
+If you need assistance locating any data on the website, you can reach out by email or telephone via the contacts on our [general and statistical enquiries page](https://www.ons.gov.uk/aboutus/contactus/generalandstatisticalenquiries).
+
+#### Interactive pop-up polls
+
+The interactive pop-up polls we use to collect feedback on some pages of the ONS website are not fully accessible. These are provided by a third party. We use these polls to gather valuable user feedback that helps us to improve the website and its content.
+
+We have identified the following accessibility issues in line with WCAG 2.2 level AA guidelines and success criteria:
+
+the button to expand and collapse the poll does not have a corresponding accessible name; this fails 1.3.1: info and relationships, and 4.1.2: name, role, value
+the expandable functionality of the pop-up poll and its elements is not indicated; this fails 1.3.1: info and relationships, and 4.1.2: name, role, value
+the incorrect role is applied to the poll component; this fails 4.1.2: name, role, value
+the error handling for the pop-up does not identify the error to the user or provide instructions or suggestions for a way to correct it; this fails 3.3.1: error identification and 3.3.2: labels or instructions
+although users can access all elements when interacting with the poll using keyboard-only commands, user focus is taken to the top of the page once a question within the poll has been answered; this fails 2.4.3: focus order
+the rating scale information in the questions is not accessible for screen reader users; this fails 1.3.1: info and relationships, 1.3.2: meaningful sequence and 3.3.2: labels or instructions
+the skip button within the pop-up poll does not clearly describe its purpose; this fails 2.4.6: headings and labels
+users cannot change the text spacing to improve their reading experience; this fails 1.4.12: text spacing
+If you want to give us feedback about the website without using pop-up polls, please email us at [sharedcustomercontactcentre@ons.gov.uk](sharedcustomercontactcentre@ons.gov.uk).
+
+#### Data links on the UK National Summary Data Page
+
+Our [UK National Summary Data Page (NSDP)](https://www.ons.gov.uk/aboutus/imfpage) contains data published in the Statistical Data and Metadata eXchange (SDMX) format, which is defined by the International Monetary Fund (IMF), to comply with the Special Data Dissemination Standard (SDDS) Plus.
+
+Currently, the many links on our NSDP use the same text for each entry and are presented in a table format. This makes it difficult for users with assistive technologies, like screen readers, to identify the purpose of each link and its corresponding dataset. This fails WCAG 2.2 success criteria:
+* 1.3.1: info and relationships
+* 2.4.4: link purpose (in context)
+* 2.4.9: link purpose (link only)
+
+We are currently developing a new way to present SDMX datasets that both meets accessibility requirements and our obligations to the IMF.
+
+### Disproportionate burden
+
+#### Historical data visualisations
+
+Our website contains thousands of data visualisations to aid with understanding of our data and commentary. There are many historical data visualisations on the site published between 23 September 2018 and 23 September 2020 that may not be compliant with WCAG 2.2 level AA standards.
+
+Most of these data visualisations are in previous and superseded versions of publications on the website and have very low use and engagement. Many of these will soon be removed from the site as part of our ongoing web and content transformation project.
+
+We have looked at the resources required to make all historical data visualisations on the website accessible compared with their use and believe that this would be a [disproportionate burden](https://www.legislation.gov.uk/uksi/2018/952/regulation/7/made).
+
+We previously ensured that any data visualisations which equated to 95% of page views for the 12 months before 23 September 2020 were made accessible. In all instances where we include a data visualisation, the information can be accessed through the surrounding commentary or the accompanying datasets alongside the publication.
+
+We will be introducing a new website platform and content management system in 2026 and are currently in the Discovery phase for advanced data visualisations, to ensure that any future solutions are accessible.
+
+#### Content published in PDF only
+
+Our website contains some historical content that is PDF-only. The accessibility regulations do not require us to make PDFs or other documents published before 23 September 2018 accessible if they are not essential to providing our services.
+
+Any PDFs published after 23 September 2020 that are essential for providing our services are in line with WCAG 2.2 level AA guidelines. This means that some PDF-only content published before this date may not be fully accessible.
+
+We have looked at the resources needed to make all historical PDF-only content on the website accessible compared with their use and relevance. We believe that this would be a [disproportionate burden](https://www.legislation.gov.uk/uksi/2018/952/regulation/7/made).
+
+#### Auto-generated PDFs
+Many pages on the ONS website allow users to download an auto-generated PDF version of the HTML web page, using the “Download as PDF” link. The system that generates these PDFs is unable to generate accessible PDFs, meaning that all of these PDFs on the website are not accessible.
+
+We have looked at the resources needed to replace the PDF generation implementation with one that can produce accessible PDFs and regenerate the existing PDFs. When balanced against the low usage of these PDFs and the fact that the same content is available accessibly through the HTML web page, we believe that making them accessible would be a [disproportionate burden](https://www.legislation.gov.uk/uksi/2018/952/regulation/7/made).
+
+#### Data table PDFs added to auto-generated PDFs
+
+Many of our web pages give you the option to download a supplementary PDF copy of the HTML web page content. These PDFs are designed for printing and are supplementary to the fully accessible HTML page.
+
+Some of these PDFs contain additional data tables at the end of the PDF that are not presented on the web page. These data tables are not fully accessible; however, they are not intended as the primary method for accessing this information. In all instances, the related data can be accessed in an accessible format through the “View all data used in this bulletin or article” link on the web page and by accessing the relevant accompanying datasets.
+
+We have looked at the resources needed to make the existing data tables within these auto-generated PDFs accessible. We believe that making them accessible would be a [disproportionate burden](https://www.legislation.gov.uk/uksi/2018/952/regulation/7/made).
+
+As part of our ongoing content and web transformation work, we will be introducing a new website platform and content management system in 2026. We will no longer generate PDFs of our HTML web content or publish appended data table PDFs in this new system, so this issue will be resolved for future publications. Existing PDFs will not be migrated to the new platform and will be removed from the site when we close our legacy system.
+
+#### Excel documents
+
+Our website contains many Excel documents, including historical and previous versions of datasets. These may contain data tables that are difficult to use with screen readers and keyboard-only navigation.
+
+We have been making improvements to the accessibility of our Excel files since September 2020 to bring them in line with the [Government Analysis Function's accessibility guidance on releasing statistics in spreadsheets](https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/), focusing on our regular and high-profile releases, and latest editions of data. We have also been engaging with stakeholders and our main user groups, where necessary, to understand how any changes to our dataset files and structures would affect their processes.
+
+We have looked at the resources needed to make all historical and previous versions of Excel documents on the website accessible. We believe that making them accessible would be a [disproportionate burden](https://www.legislation.gov.uk/uksi/2018/952/regulation/7/made).
+
+We will be looking at further improvements to the accessibility of our Excel files in future to align with the [Government Analysis Function's guidance on releasing statistics in spreadsheets](https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/), as part of our ongoing web and content transformation programme.
+
+## Content that is not within the scope of the accessibility regulations
+
+### PDFs and other documents published before 23 September 2018
+
+The accessibility regulations do not require us to make PDFs or other documents published before 23 September 2018 accessible if they are not essential to providing our services. For example, we do not plan to make the PDFs on the [Beyond Census 2011 reports and publications](https://www.ons.gov.uk/census/censustransformationprogramme/beyond2011censustransformationprogramme/reportsandpublications) page accessible as the newest document was published in January 2015 when the Beyond 2011 project closed.
+
+## What we are doing to improve accessibility
+
+We are working to resolve the issues identified in this accessibility statement.
+
+We are currently developing a new website platform and content management system, which are due to launch in 2026. We are working closely with the [Digital Accessibility Centre](Digital Accessibility Centre) to ensure they are accessible.
+
+We are also working with others across the ONS to make accessibility central to the way we create content and documents, so they can be used by everyone.
+
+## Preparation of this accessibility statement
+
+This statement was prepared on 19 September 2020. It was last reviewed and updated in December 2025.
+
+The site's accessibility compliance was last tested in March 2024 following a test completed by the Digital Accessibility Centre (DAC). The DAC carried out manual testing with people with a range of disabilities on desktop, mobile and tablet devices. The testing consisted of a series of tasks where they got to use the majority of page and content types on the ONS website.
+
+We completed an internal review of our accessibility compliance in November and December 2025, leading to some small updates to this statement to reflect our compliance with WCAG 2.2 level AA guidelines.
+
+Since spring 2024, we have been developing our new website platform and content management system. We have been working with the DAC to ensure their compliance with the latest WCAG guidelines ahead of their launch in 2026.
+
+## Feedback and contact information
+
+We are working to meet accessibility standards across our website. If you experience any difficulty in accessing our website, please [contact us](https://www.ons.gov.uk/aboutus/contactus/generalandstatisticalenquiries).
+
+## How to request content in an accessible format
+
+If you need information from the ONS website in a different format, please contact us and tell us:
+* the web address (URL) of the content
+* your name and email address
+* the format you would like the information provided in
+
+We will reply within five working days to let you know when we will be able to provide the information. We will consider each request but may not be able to provide an alternative accessible format on every occasion.
+
+Any personal data provided as part of the request will be stored in line with our [privacy notice](https://www.ons.gov.uk/help/privacy-notice).
+
+If you cannot view the maps on our [office locations](https://www.ons.gov.uk/aboutus/contactus/officelocations) page, please [call or email us](https://www.ons.gov.uk/aboutus/contactus/generalandstatisticalenquiries) for directions.
+
+## Enforcement procedure
+
+The [Equality and Human Rights Commission (EHRC)](https://www.equalityhumanrights.com/) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the “accessibility regulations”).
+
+If you are not happy with how we respond to your complaint, contact the [Equality Advisory and Support Service (EASS)](https://www.equalityadvisoryservice.com/).
